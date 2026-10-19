@@ -12,3 +12,9 @@
 - Created user-defined bridge network (`devops-net`)
 - Verified embedded DNS daemon (`127.0.0.11`) name resolution
 - Tested Layer 3 container-to-container routing via hostname
+
+## Day 3: Advanced Netfilter & Docker Firewalling
+- Deep dive into PREROUTING and DNAT port mapping
+- Analyzed FORWARD dispatching and nested DOCKER filtering chains
+- Implemented custom firewall rules inside DOCKER-USER chain
+- Resolved port binding conflicts (0.0.0.0:8080)
