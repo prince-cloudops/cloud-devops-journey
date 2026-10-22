@@ -18,3 +18,8 @@
 - Analyzed FORWARD dispatching and nested DOCKER filtering chains
 - Implemented custom firewall rules inside DOCKER-USER chain
 - Resolved port binding conflicts (0.0.0.0:8080)
+
+## Day 4: Multi-Container Orchestration (Docker Compose)
+- Created multi-tier microservice architecture (Python Flask + Redis)
+- Orchestrated service discovery and isolated network bridging via YAML
+- Enforced zero-exposure database security (internal bridge only)
