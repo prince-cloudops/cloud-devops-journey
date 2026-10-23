@@ -23,3 +23,8 @@
 - Created multi-tier microservice architecture (Python Flask + Redis)
 - Orchestrated service discovery and isolated network bridging via YAML
 - Enforced zero-exposure database security (internal bridge only)
+
+## Day 5: Layer 7 Reverse Proxy & Load Balancing
+- Implemented Nginx reverse proxy with round-robin upstream routing
+- Configured X-Forwarded-For client IP propagation
+- Orchestrated multi-replica backend microservices behind a unified ingress gateway
