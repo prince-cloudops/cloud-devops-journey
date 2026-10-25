@@ -34,3 +34,9 @@
 - Mounted host cgroups v2 and Docker daemon socket for systemd metrics
 - Resolved WSL2 metric labeling (system.slice vs container scopes)
 - Calculated live CPU rates and process memory consumption (~124 MB) via PromQL
+
+## Day 7: Infrastructure as Code (Terraform Foundations)
+- Installed HashiCorp Terraform CLI on Ubuntu WSL2
+- Configured Docker provider interfacing with local UNIX socket
+- Implemented full IaC lifecycle: init, plan, apply, and destroy
+- Analyzed state locking and resource tracking via terraform.tfstate
