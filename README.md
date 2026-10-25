@@ -28,3 +28,9 @@
 - Implemented Nginx reverse proxy with round-robin upstream routing
 - Configured X-Forwarded-For client IP propagation
 - Orchestrated multi-replica backend microservices behind a unified ingress gateway
+
+## Day 6: Infrastructure Observability (Prometheus & cAdvisor)
+- Deployed Prometheus TSDB and Google cAdvisor v0.49 on WSL2
+- Mounted host cgroups v2 and Docker daemon socket for systemd metrics
+- Resolved WSL2 metric labeling (system.slice vs container scopes)
+- Calculated live CPU rates and process memory consumption (~124 MB) via PromQL
