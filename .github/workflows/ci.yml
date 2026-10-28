@@ -1,0 +1,43 @@
+name: Continuous Integration
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r day8-cicd/requirements.txt
+
+      - name: Lint with flake8 (Code Quality Check)
+        run: |
+          # Stop build if there are Python syntax errors or undefined names
+          flake8 day8-cicd/app.py --count --select=E9,F63,F7,F82 --show-source --statistics
+          # Enforce style warnings (max-line-length=127)
+          flake8 day8-cicd/app.py --count --max-line-length=127 --statistics
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build Container Image
+        uses: docker/build-push-action@v5
+        with:
+          context: ./day8-cicd
+          push: false
+          tags: devops-journey/app:latest

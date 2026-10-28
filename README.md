@@ -40,3 +40,8 @@
 - Configured Docker provider interfacing with local UNIX socket
 - Implemented full IaC lifecycle: init, plan, apply, and destroy
 - Analyzed state locking and resource tracking via terraform.tfstate
+
+## Day 8: Automated CI/CD Pipelines (GitHub Actions)
+- Configured automated GitHub Actions workflow triggered on push/PR
+- Implemented static code linting with flake8 for Python syntax standards
+- Integrated Docker Buildx runner for remote container build validation
