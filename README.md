@@ -1,3 +1,5 @@
+[![Continuous Integration](https://github.com/prince-cloudops/cloud-devops-journey/actions/workflows/ci.yml/badge.svg)](https://github.com/prince-cloudops/cloud-devops-journey/actions/workflows/ci.yml)
+
 ## Day 1: Workstation Setup
 - Environment: Lenovo IdeaPad i7 13th Gen
 - Platform: Ubuntu 24.04 on WSL2
