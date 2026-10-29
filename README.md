@@ -47,3 +47,8 @@
 - Configured automated GitHub Actions workflow triggered on push/PR
 - Implemented static code linting with flake8 for Python syntax standards
 - Integrated Docker Buildx runner for remote container build validation
+
+## Day 9: Automated Container Delivery (GHCR)
+- Configured GitHub Container Registry authentication with ephemeral GITHUB_TOKEN
+- Implemented dynamic image tagging using Git commit SHAs and latest tags
+- Automated container packaging and remote registry publishing via GitHub Actions
